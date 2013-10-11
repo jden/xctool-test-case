@@ -9,11 +9,12 @@ Expected: 2 tests run, 2 tests pass.
 Actual in xctool: 1 test runs, 1 test passes (the XCTest test)
 
 To reproduce:
-
-git clone this repo
+```
+git clone git@github.com:jden/xctool-test-case.git 
+cd xctool-test-case
 make xcbuild
 make xctool
-
+```
 
 Related to https://github.com/facebook/xctool/issues/196
 
