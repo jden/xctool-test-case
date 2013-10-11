@@ -9,5 +9,7 @@
 #import "xctool_test_case.h"
 
 @implementation xctool_test_case
-
+- (NSString *) value{
+    return @"OK";
+}
 @end

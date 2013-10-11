@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192DCA58B6054396851351AC /* libPods-tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71682D4EC2DF40308A3201EF /* libPods-tests.a */; };
 		46F542E318087B8D00F6CCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F542E218087B8D00F6CCEC /* Foundation.framework */; };
-		46F542E818087B8D00F6CCEC /* xctool_test_case.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46F542E718087B8D00F6CCEC /* xctool_test_case.h */; };
+		46F542E818087B8D00F6CCEC /* xctool_test_case.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 46F542E718087B8D00F6CCEC /* xctool_test_case.h */; };
 		46F542EA18087B8D00F6CCEC /* xctool_test_case.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F542E918087B8D00F6CCEC /* xctool_test_case.m */; };
 		46F542F118087B8D00F6CCEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F542F018087B8D00F6CCEC /* XCTest.framework */; };
 		46F542F218087B8D00F6CCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F542E218087B8D00F6CCEC /* Foundation.framework */; };
@@ -16,6 +17,7 @@
 		46F542F718087B8D00F6CCEC /* libxctool-test-case.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F542DF18087B8D00F6CCEC /* libxctool-test-case.a */; };
 		46F542FD18087B8D00F6CCEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46F542FB18087B8D00F6CCEC /* InfoPlist.strings */; };
 		46F542FF18087B8D00F6CCEC /* xctool_test_caseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F542FE18087B8D00F6CCEC /* xctool_test_caseTests.m */; };
+		46F5430918087E2F00F6CCEC /* kiwi-test.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F5430818087E2F00F6CCEC /* kiwi-test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46F542DD18087B8D00F6CCEC /* CopyFiles */ = {
+		46F542DD18087B8D00F6CCEC /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				46F542E818087B8D00F6CCEC /* xctool_test_case.h in CopyFiles */,
+				46F542E818087B8D00F6CCEC /* xctool_test_case.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -47,12 +50,16 @@
 		46F542E618087B8D00F6CCEC /* xctool-test-case-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xctool-test-case-Prefix.pch"; sourceTree = "<group>"; };
 		46F542E718087B8D00F6CCEC /* xctool_test_case.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xctool_test_case.h; sourceTree = "<group>"; };
 		46F542E918087B8D00F6CCEC /* xctool_test_case.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xctool_test_case.m; sourceTree = "<group>"; };
-		46F542EF18087B8D00F6CCEC /* xctool-test-caseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xctool-test-caseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F542EF18087B8D00F6CCEC /* xctool-test-caseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "xctool-test-caseTests.xctest"; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F542F018087B8D00F6CCEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		46F542F318087B8D00F6CCEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		46F542FA18087B8D00F6CCEC /* xctool-test-caseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xctool-test-caseTests-Info.plist"; sourceTree = "<group>"; };
 		46F542FC18087B8D00F6CCEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46F542FE18087B8D00F6CCEC /* xctool_test_caseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xctool_test_caseTests.m; sourceTree = "<group>"; };
+		46F5430818087E2F00F6CCEC /* kiwi-test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "kiwi-test.m"; sourceTree = "<group>"; };
+		71682D4EC2DF40308A3201EF /* libPods-tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760D9B7BC43F4B6BA0FB752D /* Pods-tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests.xcconfig"; path = "Pods/Pods-tests.xcconfig"; sourceTree = "<group>"; };
+		BF66F89E20A64AD5B799F648 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +79,7 @@
 				46F542F418087B8D00F6CCEC /* UIKit.framework in Frameworks */,
 				46F542F718087B8D00F6CCEC /* libxctool-test-case.a in Frameworks */,
 				46F542F218087B8D00F6CCEC /* Foundation.framework in Frameworks */,
+				192DCA58B6054396851351AC /* libPods-tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 				46F542F818087B8D00F6CCEC /* xctool-test-caseTests */,
 				46F542E118087B8D00F6CCEC /* Frameworks */,
 				46F542E018087B8D00F6CCEC /* Products */,
+				760D9B7BC43F4B6BA0FB752D /* Pods-tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,8 @@
 				46F542E218087B8D00F6CCEC /* Foundation.framework */,
 				46F542F018087B8D00F6CCEC /* XCTest.framework */,
 				46F542F318087B8D00F6CCEC /* UIKit.framework */,
+				BF66F89E20A64AD5B799F648 /* libPods.a */,
+				71682D4EC2DF40308A3201EF /* libPods-tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				46F542FE18087B8D00F6CCEC /* xctool_test_caseTests.m */,
+				46F5430818087E2F00F6CCEC /* kiwi-test.m */,
 				46F542F918087B8D00F6CCEC /* Supporting Files */,
 			);
 			path = "xctool-test-caseTests";
@@ -152,7 +164,7 @@
 			buildPhases = (
 				46F542DB18087B8D00F6CCEC /* Sources */,
 				46F542DC18087B8D00F6CCEC /* Frameworks */,
-				46F542DD18087B8D00F6CCEC /* CopyFiles */,
+				46F542DD18087B8D00F6CCEC /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -163,20 +175,22 @@
 			productReference = 46F542DF18087B8D00F6CCEC /* libxctool-test-case.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		46F542EE18087B8D00F6CCEC /* xctool-test-caseTests */ = {
+		46F542EE18087B8D00F6CCEC /* tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46F5430518087B8D00F6CCEC /* Build configuration list for PBXNativeTarget "xctool-test-caseTests" */;
+			buildConfigurationList = 46F5430518087B8D00F6CCEC /* Build configuration list for PBXNativeTarget "tests" */;
 			buildPhases = (
+				63792813CBEA4CEDBCEC06A6 /* Check Pods Manifest.lock */,
 				46F542EB18087B8D00F6CCEC /* Sources */,
 				46F542EC18087B8D00F6CCEC /* Frameworks */,
 				46F542ED18087B8D00F6CCEC /* Resources */,
+				C64B8CDC60CC4A53A1C2B34E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				46F542F618087B8D00F6CCEC /* PBXTargetDependency */,
 			);
-			name = "xctool-test-caseTests";
+			name = tests;
 			productName = "xctool-test-caseTests";
 			productReference = 46F542EF18087B8D00F6CCEC /* xctool-test-caseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -203,7 +217,7 @@
 			projectRoot = "";
 			targets = (
 				46F542DE18087B8D00F6CCEC /* xctool-test-case */,
-				46F542EE18087B8D00F6CCEC /* xctool-test-caseTests */,
+				46F542EE18087B8D00F6CCEC /* tests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +233,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63792813CBEA4CEDBCEC06A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C64B8CDC60CC4A53A1C2B34E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46F542DB18087B8D00F6CCEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F542FF18087B8D00F6CCEC /* xctool_test_caseTests.m in Sources */,
+				46F5430918087E2F00F6CCEC /* kiwi-test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +402,7 @@
 		};
 		46F5430618087B8D00F6CCEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760D9B7BC43F4B6BA0FB752D /* Pods-tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -375,6 +424,7 @@
 		};
 		46F5430718087B8D00F6CCEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760D9B7BC43F4B6BA0FB752D /* Pods-tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,14 +459,16 @@
 				46F5430418087B8D00F6CCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		46F5430518087B8D00F6CCEC /* Build configuration list for PBXNativeTarget "xctool-test-caseTests" */ = {
+		46F5430518087B8D00F6CCEC /* Build configuration list for PBXNativeTarget "tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46F5430618087B8D00F6CCEC /* Debug */,
 				46F5430718087B8D00F6CCEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

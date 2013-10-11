@@ -1,0 +1,4 @@
+
+target :tests, :exclusive => true do
+  pod 'Kiwi/XCTest', '2.2.2'
+end

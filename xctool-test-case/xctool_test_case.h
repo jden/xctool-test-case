@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface xctool_test_case : NSObject
-
+@property (readonly) NSString *value;
 @end
